@@ -1,13 +1,38 @@
 import Banner from "./components/Banner";
+import './globals.css';
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-      <Banner title="Mark Attendance" description="Record attendance with offline support." link="/mark-attendance" />
-      <Banner title="Schedule A Meet" description="Plan meetings with team members." link="/schedule-meet" />
-      <Banner title="Email Broadcaster" description="Send bulk emails efficiently." link="/email-broadcaster" />
-      <Banner title="Resource Allocator" description="Allocate resources dynamically." link="/resource-allocator" />
-    </div>
+    <div className="banner-container">
+  <h1 className="title">
+    TeachTech Offline <span className="beta-tag">Beta</span>
+  </h1>
+  <Banner 
+    title="Mark Attendance" 
+    description="Record attendance with offline support." 
+    link="/mark-attendance" 
+    color="#ff6b6b" 
+  />
+  <Banner 
+    title="Schedule A Meet" 
+    description="Plan meetings with team members." 
+    link="/schedule-meet" 
+    color="#6b5b95" 
+  />
+  <Banner 
+    title="Email Broadcaster" 
+    description="Send bulk emails efficiently." 
+    link="/email-broadcaster" 
+    color="#ffa500" 
+  />
+  <Banner 
+    title="Resource Allocator" 
+    description="Allocate resources dynamically." 
+    link="/resource-allocator" 
+    color="#4caf50" 
+  />
+</div>
+
   );
 }
 

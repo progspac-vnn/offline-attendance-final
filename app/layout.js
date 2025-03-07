@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +43,6 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="icons/StarySky-512.png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar />
         {children}
       </body>
     </html>
